@@ -1,0 +1,26 @@
+<h1>Today's Weather Forecast in {{data.location}}</h1>
+<p>{{data.day}} {{data.time}}</p>
+<p>{{data.date}}</p>
+
+<p>Temp: {{data.temperature}}C</p>
+<p>Clouds: {{data.cloudy}}</p>
+
+<p>Sunny:
+{{#if data.sunny}}
+  Yes
+{{else}}
+  No
+{{/if}}
+</p>
+
+<p>Wind: {{data.wind}}MPH</p>
+
+{{#each people}}
+<h3>{{this}}</h3>
+{{/each}}
+
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, amet? Accusantium, delectus. 
+    Quisquam facilis atque velit neque similique voluptas, beatae labore itaque! 
+    Explicabo molestiae iure mollitia maiores odio consequatur facilis!
+</p>
