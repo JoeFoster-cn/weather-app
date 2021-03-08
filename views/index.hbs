@@ -1,8 +1,9 @@
-<h1>Today's Weather Forecast in {{data.location}}</h1>
+<h1>Today's Weather Forecast in {{name}}: {{data.temp}} *C</h1>
+
 <p>{{data.day}} {{data.time}}</p>
 <p>{{data.date}}</p>
 
-<p>Temp: {{data.temperature}}C</p>
+<p>Temp: {{data.temp}}C</p>
 <p>Clouds: {{data.cloudy}}</p>
 
 <p>Sunny:
@@ -19,8 +20,10 @@
 <h3>{{this}}</h3>
 {{/each}}
 
+<a class="btn-style" href="/weather">Find out the weather where you are</a>
+<script src="app.js"></script>
 <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, amet? Accusantium, delectus. 
-    Quisquam facilis atque velit neque similique voluptas, beatae labore itaque! 
-    Explicabo molestiae iure mollitia maiores odio consequatur facilis!
+Test
 </p>
+
+<p>Developed by <a href ="https://www.linkedin.com/in/joe-foster-14b9b5106/">Joe Foster</a></p>

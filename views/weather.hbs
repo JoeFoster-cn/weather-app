@@ -1,0 +1,31 @@
+<h1>Enter city and country</h1>
+{{!-- add to input? --}}
+
+<form action="/weather" method="POST">
+    <label for="city">city: </label>
+    <input type="text" name="city">
+    <label for="code">country: </label>
+    <input type="text" name="code">
+    <input type="submit" value="submit">
+</form>
+
+<a href="javascript:void(0);" class="icon" onclick="openMenu()"></a>
+
+{{#if err}}
+    <h2>{{err}}</h2>
+{{/if}}
+{{#if listExists}}
+    <h2>Today's weather in {{name}}:</h2>
+    <ul>
+        {{#each data}}
+            <li>{{@key}} : {{this}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+{{log data}}
+
+<script src="app.js"></script>
+
+
+<p>Developed by <a href ="https://www.linkedin.com/in/joe-foster-14b9b5106/">Joe Foster</a></p>
